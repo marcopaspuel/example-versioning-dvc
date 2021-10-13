@@ -49,3 +49,4 @@ poetry run dvc checkout
 
 If I want to commit the changes I can commit this with
 
+git commit data.dvc -m "Revert dataset updates"
