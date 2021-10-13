@@ -30,3 +30,22 @@ Then we can modify the data by adding one image
 and then we can add this image to dvc
 
 poetry run dvc add data/
+
+Push the new version of the dataset to the remote storage
+poetry run dvc push
+
+Check the git log
+git log --oneline
+
+
+Checkout the previous version of the DVC file 
+
+git checkout HEAD^1 data.dvc
+
+then 
+
+poetry run dvc checkout
+
+
+If I want to commit the changes I can commit this with
+
