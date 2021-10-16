@@ -30,3 +30,8 @@ poetry run dvc dvc run -n featurize \
                        -o data/features \
                        python src/featurization.py data/prepared data/features
 ```
+
+You can add a new stage in the dvc.yaml file and run the pipeline with 
+```bash
+poetry run dvc repro
+```
