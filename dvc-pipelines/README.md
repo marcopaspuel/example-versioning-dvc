@@ -35,3 +35,10 @@ You can add a new stage in the dvc.yaml file and run the pipeline with
 ```bash
 poetry run dvc repro
 ```
+
+To visualize the pipeline you can run 
+```bash
+poetry run dvc dag
+```
+
+Note: Make sure you are in the `dvc-pipelines/` directory
